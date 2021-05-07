@@ -1,31 +1,99 @@
 body {
-    background-color: aqua;
-}
-
-.box {
-    height: 200px;
-    width: 200px;
-    background-color: red;
-}
-
-#btn {
-    height: 50px;
-    width:50px;
-    background-color: blue;
-    padding: 5px;
-    box-shadow: black 5px 2px 2px;
+    font-size: 20px;
 }
 
 .brush-food {
     height: 200px;
     width: 200px;
-    object-fit: contain;
+    object-fit: fill;
 }
 
-.vivo {
-    font-size: 20px;
+.me {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    padding: 10px;
 }
 
-.hero-header {
-    
+.box3 {
+    width: auto;
+    border-radius: 15px;
+    background: #00bfb6;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-weight: 900;
+    font-family: arial;
+    position: relative;
+ 
+  }
+
+  @media only screen 
+  and (min-device-width: 280px) 
+  and (max-device-width: 540px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .box3 {
+        padding: 10px;
+    }
+
+    .card-row{
+        text-align: center;
+    }
+
 }
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .card-row{
+        text-align: center;
+       
+    }
+
+}
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .card-row{
+        text-align: center;
+       
+    }
+
+}
+
+  .sb14:before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-left: 15px solid transparent;
+    border-right: 15px solid #00bfb6;
+    border-top: 15px solid #00bfb6;
+    border-bottom: 15px solid transparent;
+    left: -16px;
+    top: 10px;
+  }
+
+  .vivo-card {
+    height: 400px;
+     max-width: fit-content;
+  }
+
+  .vivo-card, p {
+      overflow: scroll;
+  }
+
+  .vivo-card {
+      padding: 20px;
+  }
+
+  .card-col {
+      padding: 20px;
+  }
+
+  .info-col {
+       margin-right: 15px; 
+  }
+
