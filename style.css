@@ -1,11 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
 body {
-    font-size: 20px;
+    background-color:#404040 !important;
+    font-family: 'Merriweather', serif !important;
+}
+
+h1 {
+    font-size: 3.5rem !important;
 }
 
 .brush-food {
     height: 200px;
     width: 200px;
-    object-fit: fill;
+    object-fit: contain;
 }
 
 .me {
@@ -63,21 +73,9 @@ body {
 
 }
 
-  .sb14:before {
-    content: "";
-    width: 0px;
-    height: 0px;
-    position: absolute;
-    border-left: 15px solid transparent;
-    border-right: 15px solid #00bfb6;
-    border-top: 15px solid #00bfb6;
-    border-bottom: 15px solid transparent;
-    left: -16px;
-    top: 10px;
-  }
-
+  
   .vivo-card {
-    height: 400px;
+    height:100%;
      max-width: fit-content;
   }
 
@@ -86,7 +84,11 @@ body {
   }
 
   .vivo-card {
-      padding: 20px;
+    padding: 20px;
+      background-color: black  !important;
+      box-shadow: 20px 20px 20px #d9d9d9,
+      -10px -10px 20px #ffffff;
+  
   }
 
   .card-col {
@@ -97,3 +99,64 @@ body {
        margin-right: 15px; 
   }
 
+
+
+  .hero-header {
+      text-align: center;
+      text-shadow: 1px 1px 0px white;
+  }
+
+  .title-container {
+      text-align: center;
+      padding: 30px;
+  }
+
+  .big-vivo {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 1px 1px 0px white;
+  }
+
+
+  .maincontainer {
+      position: relative;
+      width: 100%;
+      height: 320px;
+      background: green;
+  }
+
+  .thecard {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: all 0.5s ease;
+   
+  }
+
+  .cardFlip {
+      transform: rotateY(180deg);
+  }
+
+  .thefront {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #ffc728;
+    color: #333;
+  }
+
+  .theback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #ffc728;
+    color: #333;
+    transform: rotateY(180deg);
+  }
+
+  
