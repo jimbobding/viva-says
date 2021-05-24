@@ -140,6 +140,12 @@ h1 {
       transform: rotateY(180deg);
   }
 
+  .cardFlip2 {
+      transform: rotateY(180deg);
+  }
+
+
+
   .thefront {
     position: absolute;
     width: 100%;
@@ -158,5 +164,15 @@ h1 {
     color: #333;
     transform: rotateY(180deg);
   }
+
+  .facePic {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    padding: 10px;
+      display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
   

@@ -30,12 +30,19 @@ function hide() {
 
 
 const card = document.getElementById("card");
-const card2 = document.getElementById("card2");
+
 
 card.addEventListener("click", cardFlip);
-card2.addEventListener("click", cardFlip);
+
 
 function cardFlip() {
   card.classList.toggle("cardFlip");
-  card2.classList.toggle("cardFlip");
 }
+
+document.getElementById("myBtn").addEventListener("click", function() {
+  document.getElementById("card2").classList.toggle("cardFlip2");
+});
+
+
+
+
